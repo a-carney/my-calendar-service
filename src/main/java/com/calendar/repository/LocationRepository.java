@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface LocationRepository extends JpaRepository<Contact, Integer> {
+public interface LocationRepository extends JpaRepository<Location, Integer> {
 
     @Query(value = LocationQueries.FIND_BY_CITY, nativeQuery = true)
     List<Location> findByCity(String city);
