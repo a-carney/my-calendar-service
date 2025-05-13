@@ -1,7 +1,6 @@
 package com.calendar.entity;
 
 import jakarta.persistence.*;
-import jdk.jfr.Event;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
