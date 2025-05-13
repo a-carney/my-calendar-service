@@ -27,6 +27,9 @@ public class Attendee {
     @JoinColumn(name = "contact_id")
     private Contact contact;
 
+    @Column(name = "is_organizer")
+    private Boolean isOrganizer = false;
+
     @Embeddable
     @Data
     @NoArgsConstructor
