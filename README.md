@@ -86,7 +86,7 @@ erDiagram
 
 ## API Endpoints
 
-#### Contacts
+### Contacts
 
 |   Method  |   Endpoint                                |   Description         |
 |-----------|-------------------------------------------|-----------------------|
@@ -98,7 +98,7 @@ erDiagram
 |   PUT     | /api/contacts/{id}                        | update              |
 |   DELETE  | /api/contacts{id}                         | delete              |
 
-### Locations API
+### Locations
 
 |   Method  |   Endpoint                                |   Description         |
 |-----------|-------------------------------------------|-----------------------|
@@ -109,7 +109,7 @@ erDiagram
 | PUT       | /api/locations/{id}                       | update                |
 | DELETE    | /api/locations/{id}                       | delete                |
 
-### Events API
+### Events
 
 | Method    |       Endpoint                                    |   Description         |
 |-----------|---------------------------------------------------|-----------------------|
@@ -122,7 +122,7 @@ erDiagram
 | PUT       | /api/events/{id}                                  | update                |
 | DELETE    | /api/events/{id}                                  | delete                |
 
-### Attendees API
+### Attendees
 
 |   Method  |           Endpoint                                                    |   Description             |
 |-----------|-----------------------------------------------------------------------|---------------------------|
