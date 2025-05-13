@@ -29,6 +29,9 @@ public class Event {
     @Column(name = "start_datetime", nullable = false)
     private LocalDateTime startDate;
 
+    @Column(name = "end_datetime", nullable = false)
+    private LocalDateTime endDate;
+
     @Column(name = "all_day")
     private Boolean allDay = false;
 
