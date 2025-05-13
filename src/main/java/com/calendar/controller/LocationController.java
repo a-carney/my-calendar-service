@@ -1,8 +1,8 @@
 package com.calendar.controller;
 
-import com.calendar.dto.request.LocationRequest;
-import com.calendar.dto.response.LocationResponse;
-import com.calendar.service.LocationService;
+import com.calendar.view.dto.request.LocationRequest;
+import com.calendar.view.dto.response.LocationResponse;
+import com.calendar.view.service.LocationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

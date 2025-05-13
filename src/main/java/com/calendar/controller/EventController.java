@@ -1,12 +1,11 @@
 package com.calendar.controller;
 
-import com.calendar.dto.request.EventRequest;
-import com.calendar.dto.response.EventResponse;
-import com.calendar.entity.Event;
-import com.calendar.service.EventService;
+import com.calendar.view.dto.request.EventRequest;
+import com.calendar.view.dto.response.EventResponse;
+import com.calendar.model.entity.Event;
+import com.calendar.view.service.EventService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

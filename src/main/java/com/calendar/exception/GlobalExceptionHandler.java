@@ -1,7 +1,5 @@
-package com.eventmanagement.exception;
+package com.calendar.exception;
 
-import com.calendar.exception.CalendarBadRequestException;
-import com.calendar.exception.CalendarNotFoundException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;

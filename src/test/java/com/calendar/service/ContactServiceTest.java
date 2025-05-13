@@ -1,8 +1,9 @@
 package com.calendar.service;
 
-import com.calendar.dto.response.ContactResponse;
-import com.calendar.entity.Contact;
-import com.calendar.repository.ContactRepository;
+import com.calendar.view.dto.response.ContactResponse;
+import com.calendar.model.entity.Contact;
+import com.calendar.model.repository.ContactRepository;
+import com.calendar.view.service.ContactService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

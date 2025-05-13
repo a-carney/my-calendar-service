@@ -1,8 +1,8 @@
 package com.calendar.controller;
 
-import com.calendar.dto.request.ContactRequest;
-import com.calendar.dto.response.ContactResponse;
-import com.calendar.service.ContactService;
+import com.calendar.view.dto.request.ContactRequest;
+import com.calendar.view.dto.response.ContactResponse;
+import com.calendar.view.service.ContactService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
