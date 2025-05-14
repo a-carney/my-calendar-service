@@ -17,7 +17,7 @@ public interface EventRepository extends JpaRepository<Event, Integer> {
     List<Event> findByStatus(String status);
 
     @Query(value = EventQueries.FIND_BY_LOCATION_ID, nativeQuery = true)
-    List<Event> findByLocationId(String locationId);
+    List<Event> findByLocationId(Integer locationId);
 
     @Query(value = EventQueries.FIND_BY_DATE_RANGE, nativeQuery = true)
     List<Event> findByDateRange(LocalDateTime start, LocalDateTime end);

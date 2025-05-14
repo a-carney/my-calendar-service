@@ -18,7 +18,7 @@ public class EventApiTest {
 
     @Test
     void getEventsByStatus() throws Exception {
-        mock.perform(get("/api/events/by-status?status=CONFIRMED"))
+        mock.perform(get("/api/events/by-status?status=SCHEDULED"))
                 .andExpect(status().isOk());
     }
 
@@ -27,8 +27,10 @@ public class EventApiTest {
         String json = """
             {
                 "title": "Meeting",
-                "status": "CONFIRMED",
-                "locationId": 1
+                "status": "SCHEDULED",
+                "locationId": 1,
+                "startDate": "2025-07-01T10:00:00",
+                "endDate": "2025-07-01T11:00:00"
             }""";
 
         mock.perform(post("/api/events")

@@ -8,7 +8,7 @@ public class ContactQueries {
                 contacts
             WHERE
                     LOWER(first_name) LIKE LOWER(CONCAT('%', ?1, '%'))
-                OR  LOWER(last_name) LIKE LOWER(CONCAT('%', ?2, '%'))
+                OR  LOWER(last_name) LIKE LOWER(CONCAT('%', ?1, '%'))
             """;
 
     public static final String FIND_BY_ORGANIZATION = """
