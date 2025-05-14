@@ -98,6 +98,18 @@ erDiagram
 |   PUT     | /api/contacts/{id}                        | update              |
 |   DELETE  | /api/contacts{id}                         | delete              |
 
+POST to `/api/contacts`
+```json
+{
+  "firstName": "First",
+  "lastName": "Last",
+  "email": "first.last@example.com",
+  "phone": "207-555-1234",
+  "organization": "Business Corp",
+  "notes": "this is a note"
+}
+```
+
 ### Locations
 
 |   Method  |   Endpoint                                |   Description         |
@@ -108,6 +120,17 @@ erDiagram
 | POST      | /api/locations                            | get new               |
 | PUT       | /api/locations/{id}                       | update                |
 | DELETE    | /api/locations/{id}                       | delete                |
+
+
+POST to `/api/locations`
+```json
+{
+  "name": "The Building",
+  "address": "123 Business St",
+  "city": "Place",
+  "postCode": "12345"
+}
+```
 
 ### Events
 
@@ -122,6 +145,20 @@ erDiagram
 | PUT       | /api/events/{id}                                  | update                |
 | DELETE    | /api/events/{id}                                  | delete                |
 
+POST to `/api/events`
+```json
+{
+  "title": "Special Event",
+  "description": "it will be important",
+  "startDatetime": "2025-07-11T10:00:00",
+  "endDatetime": "2025-07-11T12:00:00",
+  "allDay": false,
+  "status": "CONFIRMED",
+  "locationId": 1
+}
+```
+
+
 ### Attendees
 
 |   Method  |           Endpoint                                                    |   Description             |
@@ -131,4 +168,12 @@ erDiagram
 | POST      | /api/events/{eventId}/attendees                                       | add to event              |
 | PUT       | /api/events/{eventId}/attendees/{contactId}?isOrganizer={true/false}  | update organizer status   |
 | DELETE    | /api/events/{eventId}/attendees/{contactId}                           | remove from event         |
+
+POST to `/api/events/{eventId}/attendees`
+```json
+{
+  "contactId": 1,
+  "isOrganizer": false
+}
+```
 
