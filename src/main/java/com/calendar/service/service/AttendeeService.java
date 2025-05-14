@@ -1,7 +1,7 @@
-package com.calendar.view.service;
+package com.calendar.service.service;
 
-import com.calendar.view.dto.request.AttendeeRequest;
-import com.calendar.view.dto.response.AttendeeResponse;
+import com.calendar.service.dto.request.AttendeeRequest;
+import com.calendar.service.dto.response.AttendeeResponse;
 import com.calendar.model.entity.Attendee;
 import com.calendar.model.entity.Contact;
 import com.calendar.model.entity.Event;

@@ -1,7 +1,7 @@
-package com.calendar.view.service;
+package com.calendar.service.service;
 
-import com.calendar.view.dto.request.LocationRequest;
-import com.calendar.view.dto.response.LocationResponse;
+import com.calendar.service.dto.request.LocationRequest;
+import com.calendar.service.dto.response.LocationResponse;
 import com.calendar.model.entity.Location;
 import com.calendar.exception.CalendarNotFoundException;
 import com.calendar.model.repository.LocationRepository;

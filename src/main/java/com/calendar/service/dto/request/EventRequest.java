@@ -1,4 +1,4 @@
-package com.calendar.view.dto.request;
+package com.calendar.service.dto.request;
 
 import com.calendar.model.entity.Event;
 import jakarta.validation.constraints.NotBlank;

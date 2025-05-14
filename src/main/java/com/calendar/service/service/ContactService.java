@@ -1,7 +1,7 @@
-package com.calendar.view.service;
+package com.calendar.service.service;
 
-import com.calendar.view.dto.request.ContactRequest;
-import com.calendar.view.dto.response.ContactResponse;
+import com.calendar.service.dto.request.ContactRequest;
+import com.calendar.service.dto.response.ContactResponse;
 import com.calendar.model.entity.Contact;
 import com.calendar.exception.CalendarNotFoundException;
 import com.calendar.model.repository.ContactRepository;

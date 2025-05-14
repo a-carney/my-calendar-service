@@ -1,7 +1,7 @@
-package com.calendar.view.service;
+package com.calendar.service.service;
 
-import com.calendar.view.dto.request.EventRequest;
-import com.calendar.view.dto.response.EventResponse;
+import com.calendar.service.dto.request.EventRequest;
+import com.calendar.service.dto.response.EventResponse;
 import com.calendar.model.entity.Event;
 import com.calendar.model.entity.Location;
 import com.calendar.exception.CalendarBadRequestException;

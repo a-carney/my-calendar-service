@@ -1,4 +1,4 @@
-package com.calendar.view.dto.response;
+package com.calendar.service.dto.response;
 
 import com.calendar.model.entity.Event;
 import lombok.Data;

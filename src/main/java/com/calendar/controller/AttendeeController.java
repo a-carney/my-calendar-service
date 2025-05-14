@@ -1,8 +1,8 @@
 package com.calendar.controller;
 
-import com.calendar.view.dto.request.AttendeeRequest;
-import com.calendar.view.dto.response.AttendeeResponse;
-import com.calendar.view.service.AttendeeService;
+import com.calendar.service.dto.request.AttendeeRequest;
+import com.calendar.service.dto.response.AttendeeResponse;
+import com.calendar.service.service.AttendeeService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
