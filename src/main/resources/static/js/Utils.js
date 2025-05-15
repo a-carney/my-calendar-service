@@ -17,12 +17,13 @@ class Utils {
     static formatTime(date) {
         if (!date)  return '';
 
-        return new Date(
-            this.LANGUAGE,
-            {
-                hour: '2-digit',
-                minute: '2-digit'
-            }
+        return new Date(date)
+            .toLocaleTimeString(
+                this.LANGUAGE,
+                {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                }
         );
     }
 
@@ -54,7 +55,7 @@ class Utils {
     static toIsoString(date) {
         if (!date)  return '';
 
-        return date.toIsoString().subString(0, 19);
+        return date.toISOString().subString(0, 19);
     }
 
     static toInputDateTimeString(isoString) {

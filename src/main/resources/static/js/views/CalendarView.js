@@ -143,7 +143,7 @@ class CalendarView extends View {
                     'new-event-form-container',
                     FormComponent.eventForm()
                 );
-                CalendarView.loadEvents();
+                calendarView.loadEvents();
             },
 
             previousMonth() {
