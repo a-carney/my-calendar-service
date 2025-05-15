@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TITLE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body x-data="App.instance">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" @click.prevent="navigate('calendar')">Calendar</a></li>
+            <li><a href="#" @click.prevent="navigate('contacts')">Contacts</a></li>
+            <li><a href="#" @click.prevent="navigate('locations')">Locations</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="app-content">
+    <div class="loading">Loading application...</div>
+</main>
+
+<footer>
+    <p>FOOTER NOTES</p>
+</footer>
+
+<script src="./js/Utils.js"></script>
+
+<script src="./js/components/Component.js"></script>
+<script src="./js/views/Views.js"></script>
+
+<script src="./js/components/CardComponents.js"></script>
+<script src="./js/components/FormComponents.js"></script>
+
+<!-- Services -->
+<script src="./js/ApiService.js"></script>
+
+<!-- View classes -->
+<script src="./js/views/CalendarView.js"></script>
+<script src="./js/views/ContactsView.js"></script>
+<script src="./js/views/LocationsView.js"></script>
+
+<!-- Application -->
+<script src="./js/App.js"></script>
+</body>
+</html>
