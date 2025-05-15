@@ -9,14 +9,29 @@ class ApiService {
         }
         return ApiService._instance;
     }
+
+    getCsrfToken() {
+        const cookies = document.cookie.split(';');
+        for (let c of cookies) {
+            const [name, value] = c.trim().split('=');
+            if (name === 'XSRF-TOKEN') {
+                return decodeURIComponent(value);
+            }
+        }
+        return null;
+    }
     
     async fetch(endpoint, options = {}) {
         try {
+
+            const csrfToken = this.getCsrfToken();
             const response = await fetch(`${this.baseUrl}${endpoint}`, {
                 headers: {
                     'Content-Type': 'application/json',
+                    ...(csrfToken ? { 'X-XSRF-TOKEN': csrfToken } : {}),
                     ...options.headers
                 },
+                credentials: 'include',
                 ...options
             });
             
@@ -24,7 +39,6 @@ class ApiService {
                 throw new Error(`API error: ${response.status}`);
             }
             
-            // For DELETE requests or other requests without response body
             if (response.status === 204 || options.method === 'DELETE') {
                 return { success: true };
             }

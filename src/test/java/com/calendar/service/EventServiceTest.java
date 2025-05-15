@@ -1,5 +1,6 @@
 package com.calendar.service;
 
+import com.calendar.config.TestSecurityConfig;
 import com.calendar.exception.CalendarBadRequestException;
 import com.calendar.model.entity.Event;
 import com.calendar.model.entity.Location;
@@ -14,6 +15,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.context.annotation.Import;
 
 import java.time.LocalDateTime;
 import java.util.Collections;

@@ -1,5 +1,6 @@
 package com.calendar.service;
 
+import com.calendar.config.TestSecurityConfig;
 import com.calendar.model.entity.Location;
 import com.calendar.model.repository.LocationRepository;
 import com.calendar.service.dto.request.LocationRequest;
@@ -11,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.context.annotation.Import;
 
 import java.util.Collections;
 import java.util.List;
